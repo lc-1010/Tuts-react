@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dojo blog
 
 
@@ -55,3 +56,7 @@ cross compments pass pramter
 
 
 npx json-server --watch  data/db.json --port 8613
+=======
+# Tuts-react
+react tutorial 
+>>>>>>> 5aa902f4f0cb6db00aa796ad6fce40449daa5592
