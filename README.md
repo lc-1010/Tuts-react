@@ -62,3 +62,7 @@ cross compments pass pramter
 ```js
 useEffect(()=>{},[])
 ```
+
+> npm install react-router-dom@6
+
+
