@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dojo blog
 
 
@@ -54,9 +53,12 @@ one file is one of compents and dirtry their comation
 
 cross compments pass pramter
 
+### use json data 
 
-npx json-server --watch  data/db.json --port 8613
-=======
-# Tuts-react
-react tutorial 
->>>>>>> 5aa902f4f0cb6db00aa796ad6fce40449daa5592
+> npx json-server --watch  data/db.json --port 8613
+
+### hook useEffect
+
+```js
+useEffect(()=>{},[])
+```
