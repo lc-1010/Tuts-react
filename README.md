@@ -66,3 +66,10 @@ useEffect(()=>{},[])
 > npm install react-router-dom@6
 
 
+### useEffect clean up 
+
+> https://juejin.cn/post/7070703117817348109
+> https://codedamn.com/news/reactjs/useeffect-cleanup
+> https://developer.mozilla.org/en-US/docs/Web/API/AbortController/AbortController
+> https://www.educative.io/answers/how-to-abort-a-fetch-request-using-the-abortcontroller
+> 

@@ -12,9 +12,12 @@ const useFetch = (url) => {
         setData(newBlog);
     }
 
+
     useEffect(() => {
+        const controler = new AbortController();
+
         setTimeout(() => {
-            fetch(url)
+            fetch(url, { signal: controler.signal })
                 .then(
                     (response) => {
                         if (!response.ok) {
@@ -35,14 +38,19 @@ const useFetch = (url) => {
                 )
                 .catch(
                     error => {
+                        // if (error.name === 'AbortError') {
+                        //     console.log(error);
+                        //     console.log("fetch aborted");
+                        // } else {
                         setIsPending(false);
-                        console.log(error.message);
+                        console.log('errlog->', error);
                         setError(error.message);
-
+                        //}
                     }
-                )
+                );
 
         }, 1000);
+        return () => controler?.abort();
     }, [url]);
 
     return { data, isPending, error, handleDelet }
