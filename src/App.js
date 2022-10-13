@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import Crate from './Crate';
+import BlogDetail from './BlogDetil';
 
 function App() {
 
@@ -34,7 +35,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/crate" element={<Crate />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
           </Routes>
+
           {/* <Routes>
             <Route path="/crate" element={<Crate />} />
           </Routes> */}
