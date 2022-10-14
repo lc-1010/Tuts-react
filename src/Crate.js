@@ -1,8 +1,23 @@
 const Crate = () => {
     return (
-        <div>
-            <h2>Crate new Blog</h2>
-            <textarea name="new-post" id="new-post" cols="30" rows="10"></textarea>
+        <div className="crate">
+            <h2>Add a new blog</h2>
+            <form>
+                <label>Blog title:</label>
+                <input
+                    type="text"
+                    required
+                />
+              
+                <label htmlFor="">Blog body:</label>
+                <textarea> </textarea>
+                <label htmlFor="sk">author:</label>
+                <select>
+                    <option value="mario">mario</option>
+                    <option value="yoshi">yoshi</option>
+                </select>
+                <button>Add Blog</button>
+            </form>
         </div>
     )
 }

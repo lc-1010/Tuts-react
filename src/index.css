@@ -61,3 +61,61 @@
 .blog-preview a {
   text-decoration: none;
 }
+
+.blog-details h2 {
+  font-size: 20px;
+  color: #de0042;
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
+}
+
+.blog-details button {
+  background-color: #f1356d;
+  color: #f2f2f2;
+  border: 0;
+  padding: 9px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+/** crate from **/
+.crate {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.crate label {
+  text-align: left;
+  display: block;
+}
+
+.crate h2 {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 30px;
+}
+
+.crate input,
+.crate textarea,
+.crate select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+
+}
+
+.crate button {
+  background-color: antiquewhite;
+  color: #de0042;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  padding: 9px;
+}
