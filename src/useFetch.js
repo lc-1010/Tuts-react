@@ -10,6 +10,9 @@ const useFetch = (url) => {
     const handleDelet = (id) => {
         const newBlog = data.filter(blog => blog.id !== id);
         setData(newBlog);
+        fetch(url + '/' + id, {
+            method: 'DELETE',
+        })
     }
 
 
